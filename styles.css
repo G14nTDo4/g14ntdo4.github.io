@@ -24,3 +24,7 @@
 .background-list p,.section-description{font-size:1rem}
 @media(max-width:1080px){.intro-layout{grid-template-columns:1fr}.intro-photo{width:min(100%,360px);justify-self:start}}
 @media(max-width:700px){.intro-copy,.intro-lead{font-size:1.1rem}.intro-support,.intro-contact{font-size:1rem}.research-card h3{font-size:1.3rem}.research-card p{font-size:1rem}.intro-photo{width:min(100%,300px)}}
+
+.background-list time{font-size:1rem}
+.background-list h3{font-size:1.35rem;line-height:1.4}
+.background-list p{font-size:1.15rem;line-height:1.55}
