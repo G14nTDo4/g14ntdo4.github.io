@@ -14,29 +14,32 @@
       <div class="profile">
         <img class="portrait" src="assets/avatar.jpg" alt="Portrait of Jingyun Chen">
         <p class="eyebrow">Research profile</p>
-        <h1>Jingyun Chen <span>陈敬昀</span></h1>
+        <h1>Jingyun Chen</h1>
         <p class="profile-role">Ph.D. Student in Computer Science</p>
         <p class="profile-place">Harbin Institute of Technology, Shenzhen</p>
-        <div class="profile-links">
-          <a href="mailto:jychen@stu.hit.edu.cn">Email <span aria-hidden="true">↗</span></a>
-          <a href="https://github.com/G14nTDo4" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <div class="contact-list" aria-label="Contact and academic profiles">
+          <a href="mailto:jychen@stu.hit.edu.cn"><span class="contact-glyph" aria-hidden="true">@</span><span>Email</span></a>
+          <a href="https://scholar.google.com/citations?user=5FWIniMAAAAJ" target="_blank" rel="noopener noreferrer"><span class="contact-glyph" aria-hidden="true">S</span><span>Google Scholar</span></a>
+          <a href="https://github.com/G14nTDo4" target="_blank" rel="noopener noreferrer"><span class="contact-glyph" aria-hidden="true">GH</span><span>GitHub</span></a>
         </div>
       </div>
       <nav class="side-nav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#opensource">Open source</a>
-        <a href="#service">Academic service</a>
-        <a href="#education">Education & honors</a>
+        <a href="#scholarships">Scholarships</a>
       </nav>
       <p class="sidebar-note">Shenzhen, China<br>Agentic AI · Computational Pathology</p>
     </aside>
 
     <main id="main-content">
       <header class="intro" id="about">
-        <p class="eyebrow">Computational pathology / medical AI</p>
-        <h2>Learning where to look.<br><em>Reasoning from what we see.</em></h2>
-        <p class="intro-copy">I am a Ph.D. student at Harbin Institute of Technology, Shenzhen. My research focuses on agentic AI for whole-slide pathology, multimodal large language models, and medical image analysis.</p>
+        <p class="eyebrow">About me / computational pathology</p>
+        <p class="intro-copy intro-lead">Learning where to look. Reasoning from what we see.</p>
+        <p class="intro-copy">I am Jingyun Chen (陈敬昀), a Ph.D. student at Harbin Institute of Technology, Shenzhen. My research focuses on agentic AI for whole-slide pathology, multimodal large language models, and medical image analysis.</p>
+        <p class="intro-copy intro-followup">I have published at ECCV and MICCAI. Currently, I am exploring agentic systems and active perception for interpretable whole-slide pathology analysis.</p>
+        <p class="intro-support">I serve as a reviewer for MICCAI, CVPR, ECCV, and AAAI.</p>
+        <p class="intro-contact"><strong>Contact:</strong> <a href="mailto:jychen@stu.hit.edu.cn">jychen@stu.hit.edu.cn</a></p>
         <div class="interest-list" aria-label="Research interests">
           <span>Agentic AI</span><span>Computational Pathology</span><span>Multimodal LLMs</span>
         </div>
@@ -45,7 +48,7 @@
       <section class="section" id="research" aria-labelledby="research-heading">
         <div class="section-heading"><div><p class="section-index">01 / Research</p><h2 id="research-heading">Selected research projects</h2></div><p>Methods, evidence, and clinical applications.</p></div>
 
-<article class="research-card">
+        <article class="research-card">
           <div class="card-visual"><img src="assets/adatkd.png" alt="AdaTKD student, teacher, and fusion network overview" loading="lazy"></div>
           <div class="card-content"><div class="card-topline"><span class="venue">IEEE BIBM 2026 · Accepted</span><time>2026</time></div>
             <h3>From Annotation-assisted to Annotation-free: Adaptive Breast Cancer Neoadjuvant Therapy Response Prediction via Knowledge Distillation</h3>
@@ -87,27 +90,36 @@
 
       <section class="section" id="opensource" aria-labelledby="opensource-heading">
         <div class="section-heading"><div><p class="section-index">02 / Open source</p><h2 id="opensource-heading">Resources & implementations</h2></div><p>Research materials made accessible.</p></div>
-        <div class="open-grid">
-          <article class="open-card"><span class="open-icon" aria-hidden="true">⌗</span><p class="open-type">Curated resource</p><h3>Awesome-Pathology-Agents</h3><p>A collection of papers and datasets on computational pathology agents, organized by perception, reasoning, planning, tool use, memory, discovery, and benchmarking.</p><a href="https://github.com/G14nTDo4/Awesome-Pathology-Agents" target="_blank" rel="noopener noreferrer">View repository ↗</a></article>
-          <article class="open-card"><span class="open-icon" aria-hidden="true">↗</span><p class="open-type">Official implementation</p><h3>PathAgent</h3><p>Code for interpretable whole-slide pathology analysis with region selection, morphology interpretation, and sequential reasoning.</p><a href="https://github.com/G14nTDo4/PathAgent" target="_blank" rel="noopener noreferrer">View repository ↗</a></article>
-        </div>
+        <article class="research-card">
+          <a class="card-visual" href="https://github.com/G14nTDo4/Awesome-Pathology-Agents" target="_blank" rel="noopener noreferrer" aria-label="View Awesome-Pathology-Agents on GitHub"><img src="assets/awesome-pathology-agents.png" alt="Illustration of pathology agent research areas" loading="lazy"></a>
+          <div class="card-content"><div class="card-topline"><span class="venue">Curated research resource</span></div>
+            <h3>Awesome-Pathology-Agents</h3>
+            <p>A collection of papers and datasets on computational pathology agents, organized by perception, reasoning, planning, tool use, memory, discovery, and benchmarking.</p>
+            <div class="tags"><span>Research papers</span><span>Datasets</span><span>Pathology agents</span></div>
+            <div class="card-links"><a href="https://github.com/G14nTDo4/Awesome-Pathology-Agents" target="_blank" rel="noopener noreferrer">Repository ↗</a></div>
+          </div>
+        </article>
+        <article class="research-card">
+          <a class="card-visual" href="https://github.com/G14nTDo4/PathAgent" target="_blank" rel="noopener noreferrer" aria-label="View PathAgent on GitHub"><img src="assets/pathagent-case.png" alt="PathAgent case study with iterative pathology observations" loading="lazy"></a>
+          <div class="card-content"><div class="card-topline"><span class="venue">ECCV 2026 · Official implementation</span></div>
+            <h3>PathAgent</h3>
+            <p>Code for interpretable whole-slide pathology analysis with region selection, morphology interpretation, and sequential reasoning.</p>
+            <div class="tags"><span>Whole-slide pathology</span><span>Agentic reasoning</span><span>Open source</span></div>
+            <div class="card-links"><a href="https://github.com/G14nTDo4/PathAgent" target="_blank" rel="noopener noreferrer">Repository ↗</a></div>
+          </div>
+        </article>
       </section>
 
-      <section class="section split-section" id="service" aria-labelledby="service-heading">
-        <div><p class="section-index">03 / Academic service</p><h2 id="service-heading">Peer review</h2><p class="section-description">Reviewer for conferences in medical imaging, computer vision, and artificial intelligence.</p></div>
-        <div class="review-list" aria-label="Conferences reviewed for"><span>MICCAI</span><span>CVPR</span><span>ECCV</span><span>AAAI</span></div>
-      </section>
-
-      <section class="section split-section" id="education" aria-labelledby="education-heading">
-        <div><p class="section-index">04 / Background</p><h2 id="education-heading">Education & honors</h2></div>
+      <section class="section split-section" id="scholarships" aria-labelledby="scholarships-heading">
+        <div><p class="section-index">03 / Recognition</p><h2 id="scholarships-heading">Scholarships</h2></div>
         <div class="background-list">
-          <div><time>2025 — Present</time><h3>Ph.D. Student in Computer Science</h3><p>Harbin Institute of Technology, Shenzhen</p></div>
-          <div><time>2021 — 2025</time><h3>B.S. in Data Science</h3><p>Harbin Institute of Technology, Shenzhen</p></div>
-          <div><time>2024</time><h3>National Scholarship</h3><p>Additional honors include First-Class and Second-Class Academic Scholarships.</p></div>
+          <div><time>2024</time><h3>National Scholarship</h3></div>
+          <div><time>2023 — 2024</time><h3>First-Class Academic Scholarship</h3><p>Harbin Institute of Technology, Shenzhen</p></div>
+          <div><time>2022 — 2023</time><h3>Second-Class Academic Scholarship</h3><p>Harbin Institute of Technology, Shenzhen</p></div>
         </div>
       </section>
 
-      <footer class="footer"><div><p class="section-index">Get in touch</p><h2>Interested in computational pathology?</h2><a href="mailto:jychen@stu.hit.edu.cn">jychen@stu.hit.edu.cn ↗</a></div><p>© 2026 Jingyun Chen</p></footer>
+      <footer class="footer"><p>© 2026 Jingyun Chen</p></footer>
     </main>
   </div>
 </body>
