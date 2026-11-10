@@ -36,7 +36,7 @@
       <header class="intro" id="about">
         <div class="intro-layout">
           <div class="intro-text">
-            <p class="eyebrow">About me / computational pathology</p>
+            <h2 class="about-heading">About me</h2>
             <p class="intro-copy intro-lead">Learning where to look. Reasoning from what we see.</p>
             <p class="intro-copy">I am <strong>Jingyun Chen</strong> (陈敬昀), a Ph.D. student at <strong>Harbin Institute of Technology, Shenzhen</strong>. My research focuses on agentic AI for whole-slide pathology, multimodal large language models, and medical image analysis.</p>
             <p class="intro-copy intro-followup">I have published at <strong>ECCV</strong> and <strong>MICCAI</strong>. Currently, I am exploring agentic systems and active perception for interpretable whole-slide pathology analysis.</p>
@@ -54,11 +54,12 @@
         <div class="section-heading"><div><p class="section-index">01 / Research</p><h2 id="research-heading">Selected research projects</h2></div><p>Methods, evidence, and clinical applications.</p></div>
 
         <article class="research-card">
-          <div class="card-visual"><img src="assets/adatkd.png" alt="AdaTKD student, teacher, and fusion network overview" loading="lazy"></div>
-          <div class="card-content"><div class="card-topline"><span class="venue">IEEE BIBM 2026 · Accepted</span><time>2026</time></div>
-            <h3>From Annotation-assisted to Annotation-free: Adaptive Breast Cancer Neoadjuvant Therapy Response Prediction via Knowledge Distillation</h3>
-            <p>AdaTKD predicts treatment response from DCE-MRI with or without tumor annotations. A teacher transfers tumor-region knowledge to an annotation-free student, while a fusion branch uses masks when available.</p>
-            <div class="tags"><span>Breast cancer</span><span>DCE-MRI</span><span>Knowledge distillation</span></div>
+          <a class="card-visual" href="https://link.springer.com/chapter/10.1007/978-3-032-37422-6_28" target="_blank" rel="noopener noreferrer" aria-label="Read the PathAgent paper in the ECCV 2026 proceedings"><img src="assets/pathagent.png" alt="PathAgent research poster" loading="lazy"></a>
+          <div class="card-content"><div class="card-topline"><span class="venue">ECCV 2026</span><time>2026</time></div>
+            <h3>Toward Interpretable Analysis of Whole-slide Pathology Images via Large Language Model-based Agentic Reasoning</h3>
+            <p>PathAgent coordinates pathology models to choose regions and magnification, extract morphological details, and revise its diagnosis as evidence accumulates. It records an explicit reasoning trace.</p>
+            <div class="tags"><span>Whole-slide pathology</span><span>Agentic reasoning</span><span>Interpretability</span></div>
+            <div class="card-links"><a href="https://link.springer.com/chapter/10.1007/978-3-032-37422-6_28" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="https://github.com/G14nTDo4/PathAgent" target="_blank" rel="noopener noreferrer">Code ↗</a></div>
           </div>
         </article>
 
@@ -73,12 +74,11 @@
         </article>
 
         <article class="research-card">
-          <a class="card-visual" href="https://arxiv.org/abs/2511.17052" target="_blank" rel="noopener noreferrer" aria-label="Read the PathAgent paper"><img src="assets/pathagent.png" alt="PathAgent research poster" loading="lazy"></a>
-          <div class="card-content"><div class="card-topline"><span class="venue">ECCV 2026 · Accepted</span><time>2026</time></div>
-            <h3>Toward Interpretable Analysis of Whole-slide Pathology Images via Large Language Model-based Agentic Reasoning</h3>
-            <p>PathAgent coordinates pathology models to choose regions and magnification, extract morphological details, and revise its diagnosis as evidence accumulates. It records an explicit reasoning trace.</p>
-            <div class="tags"><span>Whole-slide pathology</span><span>Agentic reasoning</span><span>Interpretability</span></div>
-            <div class="card-links"><a href="https://arxiv.org/abs/2511.17052" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="https://github.com/G14nTDo4/PathAgent" target="_blank" rel="noopener noreferrer">Code ↗</a></div>
+          <div class="card-visual"><img src="assets/adatkd.png" alt="AdaTKD student, teacher, and fusion network overview" loading="lazy"></div>
+          <div class="card-content"><div class="card-topline"><span class="venue">IEEE BIBM 2026 · Accepted</span><time>2026</time></div>
+            <h3>From Annotation-assisted to Annotation-free: Adaptive Breast Cancer Neoadjuvant Therapy Response Prediction via Knowledge Distillation</h3>
+            <p>AdaTKD predicts treatment response from DCE-MRI with or without tumor annotations. A teacher transfers tumor-region knowledge to an annotation-free student, while a fusion branch uses masks when available.</p>
+            <div class="tags"><span>Breast cancer</span><span>DCE-MRI</span><span>Knowledge distillation</span></div>
           </div>
         </article>
 

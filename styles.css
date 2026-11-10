@@ -28,3 +28,5 @@
 .background-list time{font-size:1rem}
 .background-list h3{font-size:1.35rem;line-height:1.4}
 .background-list p{font-size:1.15rem;line-height:1.55}
+
+.intro .about-heading{font-size:clamp(2rem,3vw,2.7rem);line-height:1.16;letter-spacing:-.03em;margin:9px 0 0;font-weight:600}
