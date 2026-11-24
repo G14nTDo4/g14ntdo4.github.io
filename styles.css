@@ -32,7 +32,7 @@
 .intro .about-heading{font-size:clamp(2rem,3vw,2.7rem);line-height:1.16;letter-spacing:-.03em;margin:9px 0 0;font-weight:600}
 
 /* Selected research project figures with overhanging venue badges and elevated framing. */
-#research .research-card{grid-template-columns:minmax(230px,38%) minmax(0,1fr);align-items:center}
+#research .research-card{grid-template-columns:minmax(230px,38%) minmax(0,1fr);align-items:center;padding-left:22px}
 #research .card-visual{position:relative;display:block;width:100%;max-width:380px;min-height:0;background:transparent;border:0;border-radius:0;overflow:visible}
 #research .card-visual img{display:block;width:100%;height:auto;max-height:none;object-fit:initial;border:1px solid #eceff1;border-radius:4px;background:#fff;box-shadow:3px 3px 8px rgba(45,55,66,.28);transition:box-shadow 180ms ease,border-color 180ms ease,transform 180ms ease}
 #research a.card-visual:hover img,#research a.card-visual:focus-visible img{border-color:#bcc3c9;box-shadow:0 8px 18px rgba(28,43,61,.24);transform:translateY(-2px)}
