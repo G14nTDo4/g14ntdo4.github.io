@@ -31,13 +31,15 @@
 
 .intro .about-heading{font-size:clamp(2rem,3vw,2.7rem);line-height:1.16;letter-spacing:-.03em;margin:9px 0 0;font-weight:600}
 
-/* Selected research project figures with overhanging venue badges and elevated framing. */
-#research .research-card{grid-template-columns:minmax(230px,38%) minmax(0,1fr);align-items:center;padding-left:22px}
-#research .card-content h3{margin-top:0}
-#research .card-visual{position:relative;display:block;width:100%;max-width:380px;min-height:0;background:transparent;border:0;border-radius:0;overflow:visible}
-#research .card-visual img{display:block;width:100%;height:auto;max-height:none;object-fit:initial;border:1px solid #eceff1;border-radius:4px;background:#fff;box-shadow:3px 3px 8px rgba(45,55,66,.28);transition:box-shadow 180ms ease,border-color 180ms ease,transform 180ms ease}
-#research a.card-visual:hover img,#research a.card-visual:focus-visible img{border-color:#bcc3c9;box-shadow:0 8px 18px rgba(28,43,61,.24);transform:translateY(-2px)}
-#research .figure-badge{position:absolute;z-index:2;top:.5rem;left:-.5rem;display:inline-flex;align-items:center;min-height:1.65rem;padding:.2rem .55rem;color:#fff;background:var(--teal);box-shadow:0 1px 3px rgba(0,0,0,.2);font-size:.76rem;font-weight:700;line-height:1;white-space:nowrap}
-@media(max-width:1050px){#research .research-card{grid-template-columns:1fr;align-items:start}#research .card-visual{height:auto;max-width:440px}#research .card-visual img{height:auto;max-height:none}}
-@media(max-width:700px){#research .card-visual{height:auto;max-width:100%}#research .figure-badge{left:-.35rem;max-width:calc(100% - .2rem);font-size:.7rem;white-space:normal}}
-@media(prefers-reduced-motion:reduce){#research .card-visual img{transition:none}}
+/* Project and open-source figures with overhanging venue badges and elevated framing. */
+:is(#research,#opensource) .research-card{grid-template-columns:minmax(230px,38%) minmax(0,1fr);align-items:center;padding-left:22px}
+:is(#research,#opensource) .card-content h3{margin-top:0}
+:is(#research,#opensource) .card-visual{position:relative;display:block;width:100%;max-width:380px;min-height:0;background:transparent;border:0;border-radius:0;overflow:visible}
+#opensource .card-visual{width:fit-content;max-width:min(100%,380px);justify-self:center}
+:is(#research,#opensource) .card-visual img{display:block;width:100%;height:auto;max-height:none;object-fit:initial;border:1px solid #eceff1;border-radius:4px;background:#fff;box-shadow:3px 3px 8px rgba(45,55,66,.28);transition:box-shadow 180ms ease,border-color 180ms ease,transform 180ms ease}
+#opensource .card-visual img{width:auto;max-width:100%;max-height:280px}
+:is(#research,#opensource) a.card-visual:hover img,:is(#research,#opensource) a.card-visual:focus-visible img{border-color:#bcc3c9;box-shadow:0 8px 18px rgba(28,43,61,.24);transform:translateY(-2px)}
+:is(#research,#opensource) .figure-badge{position:absolute;z-index:2;top:.5rem;left:-.5rem;display:inline-flex;align-items:center;min-height:1.65rem;padding:.2rem .55rem;color:#fff;background:var(--teal);box-shadow:0 1px 3px rgba(0,0,0,.2);font-size:.76rem;font-weight:700;line-height:1;white-space:nowrap}
+@media(max-width:1050px){:is(#research,#opensource) .research-card{grid-template-columns:1fr;align-items:start}:is(#research,#opensource) .card-visual{height:auto;max-width:440px}#opensource .card-visual{justify-self:start;max-width:min(100%,440px)}:is(#research,#opensource) .card-visual img{height:auto;max-height:none}#opensource .card-visual img{max-height:300px}}
+@media(max-width:700px){:is(#research,#opensource) .card-visual{height:auto;max-width:100%}#opensource .card-visual{max-width:100%}:is(#research,#opensource) .figure-badge{left:-.35rem;max-width:calc(100% - .2rem);font-size:.7rem;white-space:normal}}
+@media(prefers-reduced-motion:reduce){:is(#research,#opensource) .card-visual img{transition:none}}
